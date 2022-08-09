@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+html {
+    background-color: var(--Very-light-gray)
+}
+
+#AboutCarsSection {
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.AboutCarsTitle {
+    color: var(--Very-light-gray);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+.AboutCarsInfo {
+    color: var(--Transparent-white);
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.AboutCarsColumns {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.AboutCarsImg {
+    width: 75px;
+    align-self: flex-start;
+}
+
+.LearnMoreCars {
+    background-color: var(--Very-light-gray);
+    padding: 1rem 0rem;
+    border-radius: 25px;
+    margin-top: auto;
+    width: 10rem;
+    border: 2px solid var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .8rem;
+}
+
+.Sedan {
+    color: var(--Bright-orange);
+}
+
+.Suv {
+    color: var(--Dark-cyan);
+}
+
+.Luxury {
+    color: var(--Very-dark-cyan);
+}
+
+.LearnMoreCars:hover {
+    background-color: inherit;
+    color: var(--Very-light-gray);
+    cursor: pointer;
+
+}
+
+.Column1, .Column2, .Column3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    transition: width 2s;
+    padding: 2rem;
+}
+
+.Column1 {
+    background-color: var(--Bright-orange);
+}
+
+.Column2 {
+    background-color: var(--Dark-cyan);  
+}
+
+.Column3 {
+    background-color: var(--Very-dark-cyan);
+}
+
+.Column1:hover, .Column2:hover, .Column3:hover {
+    width: 120%;
+    transition: 2s;
+}
+
+@media screen and (max-width: 850px){
+    .AboutCarsColumns {
+        flex-direction: column;
+        width: 250px;
+        transition: 2s;
+        height: 500px;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .Column1, .Column2, .Column3 {
+        width: 90%;
+        height: 350px;
+        margin: auto;
+    }
+
+    .Column1:hover, .Column2:hover, .Column3:hover {
+        width: 90%;
+        box-shadow: 0px 0px 50px black;
+        transition: 2s;
+    }
+}
