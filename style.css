@@ -40,7 +40,7 @@ html {
 
 .AboutCarsColumns {
     display: flex;
-    width: 800px;
+    width: 60%;
     margin: auto;
     justify-content: space-between;
     height: 500px;
@@ -112,14 +112,13 @@ html {
         flex-direction: column;
         width: 250px;
         transition: 2s;
-        height: 500px;
         box-sizing: border-box;
         height: auto;
     }
 
     .Column1, .Column2, .Column3 {
         width: 90%;
-        height: 350px;
+        height: auto;
         margin: auto;
     }
 
